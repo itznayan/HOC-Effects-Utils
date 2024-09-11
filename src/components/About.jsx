@@ -1,4 +1,4 @@
-import MainHOC from "./MainHOC";
+import MainHOC from "./page-transition/MainHOC";
 
 const About = () => {
   return (

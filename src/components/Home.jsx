@@ -1,13 +1,13 @@
 import React from "react";
-import withTransition from "./WithTransition";
-import MainHOC from "./MainHOC";
+import withTransition from "./page-transition/WithTransition";
+import MagneticEffect from "./effects/MagneticEffect";
 
 const Home = () => {
   return (
     <div className="text-7xl flex font-bold justify-center items-center h-screen w-full">
-      Home
+      <MagneticEffect>Home</MagneticEffect>
     </div>
   );
 };
 
-export default MainHOC(Home);
+export default withTransition(Home);
