@@ -1,6 +1,6 @@
 import Magnetic from "./effects/Magnetic";
 import MainHOC from "./page-transition/MainHOC";
-
+import Layer from "./page-transition/Layer";
 const Contact = () => {
   return (
     <>
@@ -11,4 +11,4 @@ const Contact = () => {
   );
 };
 
-export default MainHOC(Contact);
+export default Layer(Contact);

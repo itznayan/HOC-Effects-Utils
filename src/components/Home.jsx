@@ -1,7 +1,6 @@
 import React from "react";
-import withTransition from "./page-transition/WithTransition";
 import MagneticEffect from "./effects/MagneticEffect";
-
+import Layer from "./page-transition/Layer";
 const Home = () => {
   return (
     <div className="text-7xl flex font-bold justify-center items-center h-screen w-full">
@@ -10,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default withTransition(Home);
+export default Layer(Home);
