@@ -23,21 +23,21 @@ const App = () => {
       <Navbar />
       {/* Page Transitions  */}
 
-      {/* <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
         </Routes>
-      </AnimatePresence> */}
+      </AnimatePresence>
 
       {/* **END** */}
 
       {/* Section Transtion */}
-      {/* <div ref={container} className="h-[200vh] relative ">
+      <div ref={container} className="h-[200vh] relative ">
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />
-      </div> */}
+      </div>
 
       {/* Sticky Footer */}
       <StickyFooter />

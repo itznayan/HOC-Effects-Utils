@@ -25,25 +25,30 @@ const Layer = (WrappedComponent) => {
       >
         {/* First child (left side) */}
         <motion.div
-          className="bg-black h-screen w-1/4 origin-top"
+          className="bg-black h-screen w-1/5 origin-top"
           variants={childVariants}
         ></motion.div>
 
         {/* Second child */}
         <motion.div
-          className="bg-black h-screen w-1/4 origin-top"
+          className="bg-black h-screen w-1/5 origin-top"
           variants={childVariants}
         ></motion.div>
 
         {/* Third child */}
         <motion.div
-          className="bg-black h-screen w-1/4 origin-top"
+          className="bg-black h-screen w-1/5 origin-top"
           variants={childVariants}
         ></motion.div>
 
         {/* Fourth child */}
         <motion.div
-          className="bg-black h-screen w-1/4 origin-top"
+          className="bg-black h-screen w-1/5 origin-top"
+          variants={childVariants}
+        ></motion.div>
+
+        <motion.div
+          className="bg-black h-screen w-1/5 origin-top"
           variants={childVariants}
         ></motion.div>
       </motion.div>
