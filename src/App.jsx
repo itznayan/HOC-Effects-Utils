@@ -8,9 +8,9 @@ import Section1 from "./components/section-transition/Section1";
 import Section2 from "./components/section-transition/Section2";
 import { useEffect, useRef } from "react";
 import StickyFooter from "./components/Sticky_Footer/StickyFooter";
-import NavbarMain from "./navbar/Button";
-import Button from "./navbar/Button";
-import Index from "./navbar/Index";
+import NavbarMain from "./components/navbar/Nav";
+import Button from "./components/navbar/Button";
+import Index from "./components/navbar/Index";
 
 const App = () => {
   const location = useLocation();
