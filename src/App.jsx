@@ -8,6 +8,9 @@ import Section1 from "./components/section-transition/Section1";
 import Section2 from "./components/section-transition/Section2";
 import { useEffect, useRef } from "react";
 import StickyFooter from "./components/Sticky_Footer/StickyFooter";
+import NavbarMain from "./navbar/Button";
+import Button from "./navbar/Button";
+import Index from "./navbar/Index";
 
 const App = () => {
   const location = useLocation();
@@ -20,27 +23,30 @@ const App = () => {
   useEffect(() => {}, []);
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+
       {/* Page Transitions  */}
 
-      <AnimatePresence mode="wait" initial={false}>
+      {/* <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
         </Routes>
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       {/* **END** */}
 
       {/* Section Transtion */}
-      <div ref={container} className="h-[200vh] relative ">
+      {/* <div ref={container} className="h-[200vh] relative ">
         <Section1 scrollYProgress={scrollYProgress} />
         <Section2 scrollYProgress={scrollYProgress} />
-      </div>
+      </div> */}
 
       {/* Sticky Footer */}
-      <StickyFooter />
+      {/* <StickyFooter /> */}
+
+      <Index />
     </>
   );
 };
